@@ -1,0 +1,99 @@
+@charset "UTF-8";
+.container {
+  position: relative;
+}
+.mm_header {
+  background-color: #f4483e;
+}
+.tips {
+  background-color: #fff;
+  padding: 0.2rem 0 0.4rem;
+  border-bottom: 0.02rem solid #ccc;
+}
+.tips p {
+  color: #999;
+  font-size: 0.24rem;
+  text-align: center;
+}
+.c_list {
+  background-color: #fff;
+}
+.c_list .c_item {
+  border-bottom: 0.02rem solid #ccc;
+  padding: 0.2rem;
+  position: relative;
+}
+.c_list .c_item img {
+  width: 2rem;
+  height: 2rem;
+  float: left;
+  margin-right: 0.2rem;
+}
+.c_list .c_item .c_info {
+  overflow: hidden;
+  padding-right: 0.4rem;
+}
+.c_list .c_item .c_info h5 {
+  font-size: 0.28rem;
+}
+.c_list .c_item .c_info b {
+  font-size: 0.28rem;
+  display: block;
+  padding: 0.2rem 0 0.3rem;
+}
+.c_list .c_item .c_info p {
+  font-size: 0.24rem;
+  color: #EE7700;
+}
+.c_list .c_item .c_info span {
+  position: absolute;
+  right: 0.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  color: #999;
+}
+.bot {
+  height: 1rem;
+  background-color: #fff;
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.mask .close {
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.mask .close span {
+  font-size: 0.6rem;
+  color: #fff;
+  cursor: pointer;
+}
+.mask .swiper {
+  width: 8rem;
+  margin: 0 auto;
+  position: relative;
+}
+.mask .swiper .swiper-pagination {
+  color: #fff;
+  bottom: -0.4rem;
+}
+.mask .swiper-button-next,
+.mask .swiper-button-prev {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-top: -0.7rem;
+}
+.mask .swiper-button-next {
+  right: -1.4rem;
+}
+.mask .swiper-button-prev {
+  left: -1.4rem;
+}

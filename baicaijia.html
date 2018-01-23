@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>白菜价</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/baicaijia.css">
+</head>
+<body>
+<div class="container">
+
+  <!--头部-->
+  <div class="mm_header">
+    <div class="mm_logo">
+      <a href="javascript:history.go(-1);" class="fa fa-angle-left"></a>
+    </div>
+    <h1>白菜价-淘宝内部券</h1>
+    <div class="mm_app"></div>
+  </div>
+
+  <!--导航-->
+  <div class="bc_nav">
+    <ul class="clearfix">
+
+    </ul>
+  </div>
+
+  <!--商品列表-->
+  <div class="bc_list">
+
+  </div>
+
+  <!--登录注册-->
+  <div class="l_r_b mt">
+    <a href="javascript:;" class="login">登录</a>
+    <a href="javascript:;" class="register">注册</a>
+    <a href="javascript:;" class="fa fa-arrow-circle-o-up backTop">返回顶部</a>
+    <!--<a href="javascript:;" class="backTop">返回顶部</a>-->
+  </div>
+
+  <!--底部-->
+  <div class="footer">
+    <p>
+      <a href="javascript:;"><span>手机APP下载</span></a>
+      <a href="javascript:;">慢慢买手机版</a>
+      -- 掌上比价平台
+    </p>
+    <p>m.manmanbuy.com</p>
+  </div>
+
+</div>
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./lib/iscroll/iscroll.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/baicaijia.js"></script>
+
+
+<script type="text/html" id="navTpl">
+  {{each result v i}}
+    <li>
+      <a href="#" class="{{i==0?'active':''}}" data-titleId="{{v.titleId}}">{{v.title}}</a>
+    </li>
+  {{/each}}
+</script>
+
+
+
+<script type="text/html" id="itemTpl">
+
+ {{each result v i}}
+   <div class="bc_item clearfix">
+     <a href="#">
+       {{@v.productImg}}
+       <div class="info">
+         <h5>{{@v.productName}}</h5>
+         <p class="coupon">{{@v.productPrice}}</p>
+         <!--<p class="num"><i>1%</i>已领82张</p>-->
+         {{@v.productCouponRemain}}
+         <div class="bot clearfix">
+           <i class="fl">{{@v.productCoupon}}</i>
+           <span class="fr">{{@v.productHref}}</span>
+         </div>
+       </div>
+     </a>
+   </div>
+ {{/each}}
+
+</script>
+</body>
+</html>

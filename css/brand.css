@@ -1,0 +1,146 @@
+@charset "UTF-8";
+.main {
+  background-color: #fff;
+  padding-bottom: 0.6rem;
+}
+.mm_nav {
+  margin-top: -0.02rem;
+}
+.brand_title h3 {
+  border-top: 0.04rem solid #ccc;
+  border-bottom: 0.02rem solid #ccc;
+  background-color: #eeeeee;
+  padding: 0.2rem;
+  font-size: 0.28rem;
+  font-weight: bold;
+  color: #874604;
+}
+.brandlist .b_item {
+  border-bottom: 0.02rem solid #e7e7e7;
+  padding: 0.2rem;
+  background: url(../images/arrow-right.svg) no-repeat right center;
+  background-size: 0.4rem 0.4rem;
+}
+.brandlist .b_item:nth-child(1) span {
+  background-color: #f10e0e;
+}
+.brandlist .b_item:nth-child(2) span {
+  background-color: #ff9314;
+}
+.brandlist .b_item:nth-child(3) span {
+  background-color: #8adf5b;
+}
+.brandlist .b_item a {
+  display: block;
+}
+.brandlist .b_item span {
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: #c9c9c9;
+  margin-right: 0.4rem;
+  color: #fff;
+  font-size: 0.28rem;
+  line-height: 0.4rem;
+  vertical-align: top;
+  text-align: center;
+}
+.brandlist .b_item .info {
+  overflow: hidden;
+}
+.brandlist .b_item .info h5 {
+  font-size: 0.32rem;
+  padding-bottom: 0.2rem;
+}
+.brandlist .b_item .info p {
+  color: #999;
+  font-size: 0.24rem;
+}
+.ranklist .r_item {
+  border-bottom: 0.02rem solid #e7e7e7;
+  padding: 0.2rem;
+}
+.ranklist .r_item a {
+  display: block;
+}
+.ranklist .r_item .pic img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.4rem;
+  vertical-align: top;
+}
+.ranklist .r_item .info {
+  overflow: hidden;
+}
+.ranklist .r_item .info h5 {
+  font-size: 0.36rem;
+  padding-bottom: 0.2rem;
+  height: 1rem;
+}
+.ranklist .r_item .info .price {
+  margin-bottom: 0.1rem;
+}
+.ranklist .r_item .info .price b {
+  color: #ea3900;
+  font-size: 0.36rem;
+}
+.ranklist .r_item .info .other span {
+  color: #999;
+  font-size: 0.24rem;
+  margin-right: 0.2rem;
+}
+.comlist .c_item {
+  border-bottom: 0.02rem solid #e7e7e7;
+  padding: 0.2rem;
+}
+.comlist .c_item a {
+  display: block;
+}
+.comlist .c_item .c_top img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.4rem;
+  vertical-align: top;
+  float: left;
+}
+.comlist .c_item .c_top h5 {
+  overflow: hidden;
+  font-size: 0.32rem;
+  padding-bottom: 0.2rem;
+  height: 1rem;
+  color: #666;
+}
+.comlist .c_item .c_bot {
+  border: 0.02rem solid #e7e7e7;
+  padding: 0.2rem;
+  background-color: #f8f8f8;
+  position: relative;
+}
+.comlist .c_item .c_bot:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: -8px;
+  left: 35px;
+  border-left: 0.02rem solid #e7e7e7;
+  border-top: 0.02rem solid #e7e7e7;
+  background-color: #f8f8f8;
+  transform: rotate(45deg);
+}
+.comlist .c_item .c_bot .mes {
+  margin-bottom: 0.3rem;
+  font-size: 0.28rem;
+}
+.comlist .c_item .c_bot .mes span {
+  color: #333;
+}
+.comlist .c_item .c_bot p {
+  font-size: 0.28rem;
+}
+.star {
+  width: 2rem;
+  height: 0.4rem;
+  vertical-align: middle;
+  background: url(../images/star.png);
+  background-size: 0.4rem 0.4rem;
+}

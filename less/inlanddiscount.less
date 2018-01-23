@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+@import "variable";
+
+.prolist {
+  background-color: #fff;
+
+  li {
+    float: left;
+    width: 50%;
+    border-right: 1/@value solid #ccc;
+    border-bottom: 1/@value solid #ccc;
+    border-left: 1/@value solid #ccc;
+
+    &:nth-child(even) {
+      border-left: none;
+    }
+
+
+    a {
+      display: block;
+      width: 100%;
+    }
+
+    img {
+      width: 140/@value;
+      height: 140/@value;
+      margin: 20/@value auto ;
+    }
+
+    .info {
+      padding-left: 20/@value;
+
+      h5 {
+        font-weight: bolder;
+        font-size: 14/@value;
+        height: 40/@value;
+      }
+
+      .price {
+        color: #ff6c00;
+        font-size: 12/@value;
+      }
+
+      .from {
+        font-size: 12/@value;
+        color: #999;
+        margin: 10/@value 0;
+      }
+
+
+    }
+
+  }
+
+
+}
+
+
+
+.bot {
+  height: 35/@value;
+  background-color: #fff;
+}

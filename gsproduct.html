@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>凑单品</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/gsproduct.css">
+</head>
+<body>
+<div class="container">
+
+  <!--头部-->
+  <div class="mm_header">
+    <div class="mm_logo">
+      <a href="javascript:history.go(-1);" class="fa fa-angle-left"></a>
+    </div>
+    <h1>凑单品</h1>
+    <div class="mm_app"></div>
+  </div>
+
+  <!--导航-->
+  <div class="nav">
+
+    <ul class="clearfix nav_title">
+      <li>
+        <h5><b class="mall_title">京东</b><span class="fa fa-caret-down"></span></h5>
+      </li>
+      <li>
+        <h5><b class="zone_title">华北</b><span class="fa fa-caret-down"></span></h5>
+      </li>
+      <li>
+        <h5><b>全部价格</b><span class="fa fa-caret-down"></span></h5>
+      </li>
+    </ul>
+
+    <div class="mall">
+      <ul>
+
+      </ul>
+    </div>
+    <div class="zone">
+      <ul>
+      </ul>
+    </div>
+
+
+  </div>
+
+  <!--单品列表-->
+
+  <div class="prolist">
+  
+    <ul class="clearfix">
+
+
+    </ul>
+
+  </div>
+
+
+  <!--登录注册-->
+  <div class="l_r_b mt">
+    <a href="javascript:;" class="login">登录</a>
+    <a href="javascript:;" class="register">注册</a>
+    <a href="javascript:;" class="fa fa-arrow-circle-o-up backTop">返回顶部</a>
+    <!--<a href="javascript:;" class="backTop">返回顶部</a>-->
+  </div>
+
+  <!--底部-->
+  <div class="footer">
+    <p>
+      <a href="javascript:;"><span>手机APP下载</span></a>
+      <a href="javascript:;">慢慢买手机版</a>
+      -- 掌上比价平台
+    </p>
+    <p>m.manmanbuy.com</p>
+  </div>
+
+</div>
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/gsproduct.js"></script>
+
+<script type="text/html" id="mallTpl">
+  {{each result v i}}
+    <li class="{{i==0?'active':''}}" data-shopid="{{v.shopId}}">{{v.shopName}} <span class="fa fa-check-square-o"></span></li>
+  {{/each}}
+</script>
+
+<script type="text/html" id="zoneTpl">
+  {{each result v i}}
+    <li class="{{i==0?'active':''}}" data-shopid="{{v.areaId}}">{{v.areaName}}<span class="fa fa-check-square-o"></span></li>
+  {{/each}}
+</script>
+
+<script type="text/html" id="listTpl">
+  {{each result v i}}
+    <li>
+      <a href="#" class="info">
+        <img src="{{v.productImg}}" alt="">
+        <h5>{{v.productName}}</h5>
+        <p>
+          <b>{{v.productPrice}}</b>
+          <span class="fr">去凑单</span>
+        </p>
+      </a>
+    </li>
+  {{/each}}
+</script>
+
+
+
+
+</body>
+</html>

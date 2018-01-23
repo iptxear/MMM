@@ -1,0 +1,24 @@
+@charset "UTF-8";
+.mm_header {
+  background-color: #f4483e;
+}
+.coupon_list {
+  background-color: #fff;
+  padding: 0.4rem 0 1rem 0;
+}
+.coupon_list li {
+  float: left;
+  margin-left: 0.1rem;
+  border: 0.02rem solid #eee;
+  width: 2.4rem;
+  padding: 0.1rem 0;
+}
+.coupon_list li a img {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 auto;
+}
+.coupon_list li a p {
+  text-align: center;
+  font-size: 0.24rem;
+}

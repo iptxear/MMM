@@ -1,0 +1,321 @@
+@charset "UTF-8";
+
+@import "base";
+@import "adapter";
+@import "variable";
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+}
+
+.container {
+  width: 100%;
+  max-width: 750px;
+  min-width: 360px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+}
+
+/*==============m_header===============*/
+.m_header {
+  height: 50/@value;
+  background-color: @m_Color;
+  position: relative;
+}
+
+.m_logo {
+  width: 400/@value;
+  height: 100%;
+  position: absolute;
+  left: 5/@value;
+  padding: 12/@value;
+}
+
+.m_logo a {
+  display: block;
+  height: 100%;
+}
+
+.m_logo img {
+  width: auto;
+  height: 100%;
+}
+
+.m_app {
+  width: 50/@value;
+  height: 100%;
+  background-color: aqua;
+  position: absolute;
+  right: 0;
+  padding: 7/@value;
+  background: url(../images/header_app.png)no-repeat;
+  background-size: 68/@value/2  68/@value/2;
+  background-origin: content-box;
+  cursor: pointer;
+}
+
+/*==============m_search===============*/
+.m_search {
+  height: 50/@value;
+  background-color: #fff;
+  padding: 10/@value;
+  position: relative;
+  padding-right: 13%;
+}
+
+.m_search input[type="text"] {
+  width: 100%;
+  height: 30/@value;
+  border-radius: 15/@value;
+  padding-left: 20/@value;
+  background-color: #f1f1f1;
+  font-size: 12/@value;
+  //vertical-align: top;
+  display: block;
+}
+
+.m_search input[type="button"] {
+  position: absolute;
+  top: 10/@value;
+  right: 15/@value;
+  width: 9%;
+  height: 30/@value;
+  line-height: 30/@value;
+  font-size: 14/@value;
+  border: none;
+  outline: none;
+  background-color: @m_Color;
+  border-radius: 15/@value;
+  color: #fff;
+}
+
+/*===============footer=================*/
+
+.l_r_b {
+  height: 30/@value;
+  border-bottom: 1/@value solid #ccc;
+  border-top: 1/@value solid #ccc;
+  margin: 20/@value 0 20/@value;
+  box-sizing: border-box;
+
+  a {
+    display: inline-block;
+    height: 100%;
+    line-height: 30/@value;
+    text-align: center;
+    font-size: 14/@value;
+    vertical-align: top;
+  }
+  .login,.register {
+    width: 30%;
+    border-right: 1/@value solid #ccc;
+  }
+  .backTop {
+    width: 37%;
+  }
+}
+
+.footer {
+  p {
+    color: #666;
+    text-align: center;
+    font-size: 14/@value;
+    a {
+      font-size: 14/@value;
+      span {
+        color: red;
+      }
+    }
+  }
+}
+
+
+
+/*===============公用商品导航=================*/
+.mm_nav {
+  height: 40/@value;
+  line-height: 40/@value;
+  background: linear-gradient(#fff,#c4c4c4);
+  margin-top: 3/@value;
+  padding: 0 10/@value;
+  font-size: 14/@value;
+  a {
+    font-size: 14/@value;
+    vertical-align: top;
+  }
+
+
+  button {
+    height: 28/@value;
+    width: 70/@value;
+    border: none;
+    margin-top: 6/@value;
+    font-size: 14/@value;
+    border-radius: 6/@value;
+    background: linear-gradient(#d7d7d7,#f5f5f5);
+    box-shadow: 0px 1px 2px #888;
+    outline: none;
+  }
+
+}
+
+
+/*===============公用商品列表项=================*/
+
+.m_r_item {
+  background-color: #fff;
+  padding: 15/@value 8/@value;
+  border-bottom: 1px solid @m_bdColor;
+
+  img {
+    width: 100/@value;
+    height: 100/@value;
+    float: left;
+    margin-right: 10/@value;
+  }
+
+  .item_info {
+    overflow: hidden;
+
+    h6 {
+      font-size: 16/@value;
+      margin-bottom: 60/@value;
+
+      span {
+        color: @m_fontColor;
+      }
+    }
+
+    p {
+      color: #a1a1a1;
+      font-size: 14/@value;
+    }
+
+  }
+
+}
+
+/*===============公用分页器=================*/
+
+.paginator {
+  height: 50/@value;
+  background-color: #fff;
+  border-bottom: 1/@value solid @m_bdColor;
+
+
+  .prev:hover,.next:hover {
+    background-color: @m_bdColor;
+  }
+  div {
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    line-height:50/@value;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14/@value;
+  }
+
+  .selector {
+    border-left: 1/@value solid @m_bdColor;
+    border-right: 1/@value solid @m_bdColor;
+    position: relative;
+    select {
+      width: 100%;
+      height: 100%;
+      outline: none;
+      //text-align: center;
+      padding-left: 45%;
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+
+
+/*===============公用分栏列表=================*/
+
+.m_cate {
+  border: 1px solid #ccc;
+  border-radius: 10/@value;
+  background-color: #ededed;
+}
+
+.m_list {
+  p {
+    height: 40/@value;
+    line-height: 40/@value;
+    //border-top: 1/@value solid #ccc;
+    border-bottom: 1/@value solid #ccc;
+    font-size: 16/@value;
+    font-weight: bold;
+    padding: 0 15/@value;
+
+    span {
+      line-height: 40/@value;
+    }
+
+  }
+}
+
+.m_list:last-child p {
+  border-bottom: none;
+}
+
+
+
+
+
+/*===============公用头部底部=================*/
+.mm_header {
+  height: 50/@value;
+  background-color: @m_Color;
+  position: relative;
+
+  h1{
+    color: #fff;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 22/@value;
+    line-height: 50/@value;
+    margin: 0 50/@value;
+  }
+
+  .mm_logo {
+    left: 0;
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      line-height: 34/@value;
+      font-size: 30/@value;
+      color: #fff;
+    }
+
+  }
+
+  .mm_app {
+    right: 0;
+    background: url(../images/header_app.png) no-repeat;
+    background-size: 34/@value 34/@value;
+  }
+
+  .mm_logo,.mm_app{
+    width: 50/@value;
+    height: 50/@value;
+    position: absolute;
+    top: 0;
+    padding: 8/@value;
+    //background-color: #f4483e;
+    background-origin: content-box;
+    background-clip: content-box;
+  }
+
+}
+
+
+.l_r_b.mt {
+  margin-top: 0;
+}

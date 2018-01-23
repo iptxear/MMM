@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+@import "variable";
+
+.m_show {
+  background-color: #fff;
+  border-top: 1/@value solid #9e9e9e;
+
+  h3 {
+    text-align: center;
+    margin: 20/@value 0 100/@value;
+    font-size: 20/@value;
+  }
+
+  .pic {
+    padding: 30/@value 0;
+    position: relative;
+    img {
+      width: 170/@value;
+      height: 170/@value;
+      margin: 0 auto;
+    }
+
+    .collect {
+      width: 40/@value;
+      height: 40/@value;
+      position: absolute;
+      bottom: 20/@value;
+      right: 20/@value;
+    }
+  }
+
+  ul {
+    border-top: 1/@value solid #c14d00;
+    border-bottom: 1/@value solid #c14d00;
+    background: linear-gradient(#ffd050,#ffbb00);
+    li {
+      float: left;
+      width: 33.33%;
+      text-align: center;
+      height: 35/@value;
+      line-height: 35/@value;
+
+      &:first-child {
+        background: linear-gradient(#ffa632,#ff9000);
+      }
+
+      &:nth-child(2){
+        border-left: 1/@value solid #c14d00;
+        border-right: 1/@value solid #c14d00;
+      }
+
+      a {
+        color: #fff;
+        display: block;
+        width: 100%;
+        font-size: 14/@value;
+      }
+
+    }
+  }
+
+  .mall {
+    height: 50/@value;
+    line-height: 50/@value;
+    border-bottom: 1/@value solid #ccc;
+
+    a {
+      display: block;
+      width: 100%;
+      font-size: 16/@value;
+
+      img {
+        width: 20/@value;
+        height: 20/@value;
+        margin: 0 20/@value;
+        margin-top: 15/@value;
+      }
+
+      .price {
+        color: #d10311;
+      }
+
+      .buy {
+        padding: 2/@value  5/@value;
+        background-color: #ff5500;
+        border-radius: 5/@value;
+        color: #fff;
+        margin: 0 5/@value 0 10/@value;
+      }
+
+
+    }
+  }
+
+  p {
+    height: 30/@value;
+    line-height: 30/@value;
+    color: #888;
+    font-size: 12/@value;
+    padding-left: 5/@value;
+    border-bottom: 3/@value solid #666;
+  }
+
+}
+
+.comment {
+  background-color: #fff;
+
+  .c_title {
+    p {
+      height: 35/@value;
+      line-height: 35/@value;
+      text-align: center;
+      background-color: #dbdbdb;
+    }
+
+  }
+
+
+  .c_item {
+    border-bottom: 1/@value solid #ccc;
+    padding: 5/@value 10/@value;
+    font-size: 12/@value;
+
+    .info {
+      margin: 10/@value 0;
+      color: #999;
+      p {
+        text-align: right;
+      }
+
+
+    }
+
+  }
+
+  .c_more {
+    height: 60/@value;
+    border-bottom: 1/@value solid #ccc;
+    padding: 15/@value 20/@value;
+
+    a {
+      display: block;
+      width: 100%;
+      height: 30/@value;
+      line-height: 30/@value;
+      border: 1/@value solid #ccc;
+      font-size: 14/@value;
+      border-radius: 8/@value;
+      text-align: center;
+      background: linear-gradient(#f1f1f1,#d4d4d4);
+    }
+
+  }
+
+
+}
+
+
+.l_r_b {
+  margin-top: 0px;
+}

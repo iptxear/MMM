@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>品牌标题</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/brandTitle.css">
+</head>
+<body>
+<div class="container">
+
+  <!--头部-->
+  <div class="m_header">
+    <div class="m_logo">
+      <a href="index.html">
+        <img src="./images/header_logo.png" alt="">
+      </a>
+    </div>
+    <div class="m_app"></div>
+  </div>
+
+  <!--搜索框-->
+  <div class="m_search">
+    <input type="text" placeholder="请输入你想比价的商品">
+    <input type="button" value="搜索">
+  </div>
+
+  <!--导航-->
+  <div class="mm_nav">
+    <a href="index.html">首页&nbsp;&gt;&nbsp;</a>
+    <a href="category.html">全部分类&nbsp;&gt;&nbsp;</a>
+    <button class="fr">筛选</button>
+  </div>
+
+  <div class="main">
+
+
+    <!--标题-->
+
+    <div class="mm_title">
+        <h3>热门品牌排行</h3>
+    </div>
+
+    <!--商品分类-->
+
+    <div class="m_cate">
+
+    </div>
+
+  </div>
+
+
+  <!--登录注册-->
+  <div class="l_r_b">
+    <a href="javascript:;" class="login">登录</a>
+    <a href="javascript:;" class="register">注册</a>
+    <a href="javascript:;" class="fa fa-arrow-circle-o-up backTop">返回顶部</a>
+    <!--<a href="javascript:;" class="backTop">返回顶部</a>-->
+  </div>
+
+  <!--底部-->
+  <div class="footer">
+    <p>
+      <a href="javascript:;"><span>手机APP下载</span></a>
+      <a href="javascript:;">慢慢买手机版</a>
+      -- 掌上比价平台
+    </p>
+    <p>m.manmanbuy.com</p>
+  </div>
+
+</div>
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/brandTitle.js"></script>
+
+
+<script type="text/html" id="listTpl">
+  {{each result v i}}
+  <div class="m_list">
+    <a href="brand.html?brandtitleid={{v.brandTitleId}}">
+      <p data-id="{{v.brandtitleId}}">{{v.brandTitle}}
+        <span class="fa fa-chevron-down fr"></span>
+      </p>
+    </a>
+  </div>
+  {{/each}}
+</script>
+
+
+</body>
+</html>

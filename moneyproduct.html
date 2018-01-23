@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>国内折扣</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/moneyproduct.css">
+</head>
+<body>
+<div class="container">
+
+  <!--头部-->
+  <div class="mm_header">
+    <div class="mm_logo">
+      <a href="javascript:history.go(-1);" class="fa fa-angle-left"></a>
+    </div>
+    <h1>国内折扣</h1>
+    <div class="mm_app"></div>
+  </div>
+
+  <!--折扣商品详情-->
+  <div class="p_show">
+
+  </div>
+
+  <div class="p_city">
+
+  </div>
+
+  <div class="p_buy">
+    <a href="#" class="buy_btn">前往购买</a>
+  </div>
+
+  <div class="p_code">
+    <img src="./images/mmbweixin2.png" alt="" class="">
+  </div>
+
+  <div class="p_comment">
+
+    <div class="com_post">
+      <h5>发表评论</h5>
+      <div class="com_box">
+        <textarea name="" cols="30" rows="3"></textarea>
+        <div class="bot">
+          <span class="fr btn">发表评论</span>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="com_new">
+      <h5>最新评论</h5>
+      <div class="com_content clearfix">
+        <img src="./images/youke.jpg" alt="">
+        <div class="text">
+          <p class="info clearfix">
+            <span class="fl">赶鸭子上架</span>
+            <span class="fr">2016/10/25 14:13:53</span>
+          </p>
+          <p>预定了预定了预定了预定了预定了预定了预定了预定了预定了</p>
+        </div>
+      </div>
+      <div class="com_content clearfix">
+        <img src="./images/youke.jpg" alt="">
+        <div class="text">
+          <p class="info clearfix">
+            <span class="fl">赶鸭子上架</span>
+            <span class="fr">2016/10/25 14:13:53</span>
+          </p>
+          <p>预定了预定了预定了预定了预定了预定了预定了预定了预定了</p>
+        </div>
+      </div>
+      <div class="com_content clearfix">
+        <img src="./images/youke.jpg" alt="">
+        <div class="text">
+          <p class="info clearfix">
+            <span class="fl">赶鸭子上架</span>
+            <span class="fr">2016/10/25 14:13:53</span>
+          </p>
+          <p>预定了预定了预定了预定了预定了预定了预定了预定了预定了</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <!--登录注册-->
+  <div class="l_r_b mt">
+    <a href="javascript:;" class="login">登录</a>
+    <a href="javascript:;" class="register">注册</a>
+    <a href="javascript:;" class="fa fa-arrow-circle-o-up backTop">返回顶部</a>
+    <!--<a href="javascript:;" class="backTop">返回顶部</a>-->
+  </div>
+
+  <!--底部-->
+  <div class="footer">
+    <p>
+      <a href="javascript:;"><span>手机APP下载</span></a>
+      <a href="javascript:;">慢慢买手机版</a>
+      -- 掌上比价平台
+    </p>
+    <p>m.manmanbuy.com</p>
+  </div>
+
+</div>
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/moneyproduct.js"></script>
+
+
+<script type="text/html" id="showTpl">
+  {{each result v i}}
+    <h3>{{v.productName}}</h3>
+    <p class="info">{{v.productFrom}} {{v.productTime}}
+      {{v.productTips}}</p>
+    <div class="clearfix sm">
+      {{@ v.productImgSm}}
+      <p class="content">{{v.productInfo}}{{v.productInfo1}}{{v.productInfo2}}</p>
+
+    </div>
+
+
+  <div class="bg">
+    {{@v.productImgLg}}
+  </div>
+
+  {{/each}}
+</script>
+
+
+
+<script type="text/html" id="cityTpl">
+  {{each result v i}}
+    {{@ v.productCity}}
+  {{/each}}
+</script>
+</body>
+</html>

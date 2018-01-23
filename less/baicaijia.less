@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@import "variable";
+
+.mm_header {
+  background-color: #f4483e;
+}
+
+.bc_nav {
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 4/@value;
+  line-height: 40/@value;
+  padding-left: 10/@value;
+
+
+  li {
+    float: left;
+    //width: 70/@value;
+    height: 40/@value;
+    text-align: center;
+    background-color: #fff;
+    margin-right: 30/@value;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      padding: 8/@value 0;
+      font-size: 14/@value;
+      vertical-align: top;
+
+      &.active {
+        border-bottom: 2/@value solid #e4393c;
+      }
+    }
+  }
+}
+
+
+
+.bc_item {
+
+  background-color: #fff;
+  padding: 10/@value;
+  margin-bottom: 10/@value;
+
+  img {
+    width: 130/@value;
+    height: 130/@value;
+    float: left;
+    margin-right: 3/@value;
+  }
+
+  .info {
+    overflow: hidden;
+    //background-color: #007aff;
+
+    h5 {
+      font-size: 16/@value;
+    }
+
+    .coupon {
+      color: #fc353a;
+      height: 50/@value;
+      line-height: 50/@value;
+      font-size: 24/@value;
+
+      i {
+        font-size: 16/@value;
+        font-style: normal;
+      }
+
+      em {
+        font-size: 12/@value;
+        font-style: normal;
+        margin-left: 5/@value;
+      }
+
+      del {
+        font-size: 12/@value;
+        color: #a8a8a8;
+        text-decoration: line-through;
+        margin-left: 10/@value;
+      }
+    }
+
+    .bar {
+      color: #fc353a;
+      font-size: 12/@value;
+
+      i {
+        border: 1/@value solid #fc353a;
+        background-color: #ffb7b7;
+        color: #fff;
+        padding: 0 33/@value;
+        border-radius: 10/@value;
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 10/@value;
+        margin-right: 10/@value;
+      }
+
+    }
+
+    .bot {
+      margin-top: 20/@value;
+      padding-bottom: 2/@value;
+      height: 35/@value;
+      line-height: 35/@value;
+
+      i a {
+        font-style: normal;
+        border: 1/@value dotted #fc353a;
+        padding: 5/@value;
+        color: #fc353a;
+        font-size: 12/@value;
+        vertical-align: top;
+      }
+
+      span:last-child {
+        a {
+          color: #fff;
+        }
+
+        background-color: #ff5e5d;
+        padding: 0 5/@value;
+        border-radius: 5/@value;
+        font-size: 14/@value;
+      }
+
+    }
+
+
+
+
+
+  }
+
+
+}
+

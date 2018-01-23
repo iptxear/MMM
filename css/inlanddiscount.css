@@ -1,0 +1,44 @@
+@charset "UTF-8";
+.prolist {
+  background-color: #fff;
+}
+.prolist li {
+  float: left;
+  width: 50%;
+  border-right: 0.02rem solid #ccc;
+  border-bottom: 0.02rem solid #ccc;
+  border-left: 0.02rem solid #ccc;
+}
+.prolist li:nth-child(even) {
+  border-left: none;
+}
+.prolist li a {
+  display: block;
+  width: 100%;
+}
+.prolist li img {
+  width: 2.8rem;
+  height: 2.8rem;
+  margin: 0.4rem auto;
+}
+.prolist li .info {
+  padding-left: 0.4rem;
+}
+.prolist li .info h5 {
+  font-weight: bolder;
+  font-size: 0.28rem;
+  height: 0.8rem;
+}
+.prolist li .info .price {
+  color: #ff6c00;
+  font-size: 0.24rem;
+}
+.prolist li .info .from {
+  font-size: 0.24rem;
+  color: #999;
+  margin: 0.2rem 0;
+}
+.bot {
+  height: 0.7rem;
+  background-color: #fff;
+}

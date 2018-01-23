@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>国内折扣</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/inlanddiscount.css">
+</head>
+<body>
+<div class="container">
+
+  <!--头部-->
+  <div class="mm_header">
+    <div class="mm_logo">
+      <a href="javascript:history.go(-1);" class="fa fa-angle-left"></a>
+    </div>
+    <h1>省钱控-最新优惠</h1>
+    <div class="mm_app"></div>
+  </div>
+
+  <!--商品列表-->
+
+  <ul class="clearfix prolist">
+
+  </ul>
+
+  <div class="bot">
+
+  </div>
+
+
+
+  <!--登录注册-->
+  <div class="l_r_b mt">
+    <a href="javascript:;" class="login">登录</a>
+    <a href="javascript:;" class="register">注册</a>
+    <a href="javascript:;" class="fa fa-arrow-circle-o-up backTop">返回顶部</a>
+    <!--<a href="javascript:;" class="backTop">返回顶部</a>-->
+  </div>
+
+  <!--底部-->
+  <div class="footer">
+    <p>
+      <a href="javascript:;"><span>手机APP下载</span></a>
+      <a href="javascript:;">慢慢买手机版</a>
+      -- 掌上比价平台
+    </p>
+    <p>m.manmanbuy.com</p>
+  </div>
+
+</div>
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/inlanddiscount.js"></script>
+
+
+<script type="text/html" id="prolistTpl">
+  {{each result v i}}
+    <li>
+      <a href="discount.html?productid={{v.productId}}">
+        {{@v.productImg}}
+        <div class="info">
+          <h5>{{v.productName}}</h5>
+          <p class="price">{{v.productPrice}}</p>
+          <p class="from">{{v.productFrom}} | {{v.productTime}}</p>
+        </div>
+      </a>
+    </li>
+  {{/each}}
+</script>
+
+</body>
+</html>

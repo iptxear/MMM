@@ -1,0 +1,18 @@
+@charset "UTF-8";
+.main {
+  background-color: #fff;
+  padding-bottom: 0.6rem;
+}
+.mm_nav {
+  margin-top: -0.02rem;
+}
+.mm_title {
+  padding: 0.2rem 0.16rem;
+}
+.mm_title h3 {
+  border: 0.02rem solid #ccc;
+  background-color: #eeeeee;
+  padding: 0.2rem;
+  font-size: 0.32rem;
+  color: #874604;
+}

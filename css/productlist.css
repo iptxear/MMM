@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.m_p_item {
+  background-color: #fff;
+  padding: 0.3rem 0.16rem;
+  border-bottom: 0.02rem solid #e7e7e7;
+}
+.m_p_item img {
+  width: 2rem;
+  height: 2rem;
+  float: left;
+  margin-right: 0.3rem;
+}
+.m_p_item .item_info {
+  overflow: hidden;
+}
+.m_p_item .item_info h6 {
+  font-size: 0.32rem;
+  margin-bottom: 0.5rem;
+}
+.m_p_item .item_info > span {
+  color: red;
+  font-size: 0.32rem;
+  line-height: 0.6rem;
+}
+.m_p_item .item_info p {
+  color: #a1a1a1;
+  font-size: 0.24rem;
+}
+.m_p_item .item_info p span {
+  margin-right: 0.2rem;
+}

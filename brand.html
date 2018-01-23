@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>品牌标题</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/brand.css">
+</head>
+<body>
+<div class="container">
+
+  <!--头部-->
+  <div class="m_header">
+    <div class="m_logo">
+      <a href="index.html">
+        <img src="./images/header_logo.png" alt="">
+      </a>
+    </div>
+    <div class="m_app"></div>
+  </div>
+
+  <!--搜索框-->
+  <div class="m_search">
+    <input type="text" placeholder="请输入你想比价的商品">
+    <input type="button" value="搜索">
+  </div>
+
+
+  <!--导航-->
+  <div class="mm_nav">
+    <a href="index.html">首页&nbsp;&gt;&nbsp;</a>
+    <a href="category.html">全部分类&nbsp;&gt;&nbsp;</a>
+    <button class="fr">筛选</button>
+  </div>
+
+
+  <div class="main">
+
+    <!--一级品牌标题-->
+    <div class="brand_title">
+    <h3>平板电视哪个牌子好</h3>
+    </div>
+    <!--品牌列表-->
+    <div class="brandlist">
+
+    </div>
+
+
+
+    <!--一级排行标题-->
+    <div class="brand_title">
+      <h3>平板电视产品销量排行</h3>
+    </div>
+    <!--排行列表-->
+    <div class="ranklist">
+
+
+
+    </div>
+
+
+
+    <!--一级评论标题-->
+    <div class="brand_title">
+      <h3>平板电视最新评论</h3>
+    </div>
+    <!--评论列表-->
+    <div class="comlist">
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+  <!--登录注册-->
+  <div class="l_r_b">
+    <a href="javascript:;" class="login">登录</a>
+    <a href="javascript:;" class="register">注册</a>
+    <a href="javascript:;" class="fa fa-arrow-circle-o-up backTop">返回顶部</a>
+    <!--<a href="javascript:;" class="backTop">返回顶部</a>-->
+  </div>
+
+  <!--底部-->
+  <div class="footer">
+    <p>
+      <a href="javascript:;"><span>手机APP下载</span></a>
+      <a href="javascript:;">慢慢买手机版</a>
+      -- 掌上比价平台
+    </p>
+    <p>m.manmanbuy.com</p>
+  </div>
+
+</div>
+
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/brand.js"></script>
+
+
+<script type="text/html" id="brandTpl">
+  {{each result v i}}
+    <div class="b_item">
+
+      <a href="productlist.html?categoryId={{v.categoryId}}">
+        <span class="fl">{{i+1}}</span>
+        <div class="info">
+          <h5>{{v.brandName}}</h5>
+          <p>{{v.brandInfo}}</p>
+        </div>
+      </a>
+
+    </div>
+  {{/each}}
+</script>
+
+
+
+<script type="text/html" id="rankTpl">
+  {{each result v i}}
+    <div class="r_item clearfix">
+      <a href="productdetail.html?productid={{v.productId}}">
+        <div class="pic fl">
+          {{@v.productImg}}
+        </div>
+        <div class="info">
+          <h5>{{v.productName}}</h5>
+          <div class="price">
+            <b>{{v.productPrice}}</b>
+                  <span class="star fr">
+                  </span>
+          </div>
+          <div class="other">
+            <span>{{v.productQuote}}</span>
+            <span>{{v.productCom}}</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  {{/each}}
+</script>
+
+
+
+<script type="text/html" id="comTpl">
+  {{each result v i}}
+
+    <div class="c_item">
+
+      <a href="#">
+        <div class="c_top clearfix">
+          {{@productImg}}
+          <h5>{{productName}}</h5>
+        </div>
+        <div class="c_bot">
+
+          <div class="mes">
+            <span>{{v.comName}}</span>:
+            <span class="star" style="display:inline-block"></span>
+            <span class="fr">{{v.comTime}}</span>
+          </div>
+
+          <p>{{v.comContent}}</p>
+
+        </div>
+      </a>
+
+    </div>
+
+  {{/each}}
+</script>
+
+
+</body>
+</html>

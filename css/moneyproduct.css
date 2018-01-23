@@ -1,0 +1,149 @@
+@charset "UTF-8";
+.p_show {
+  background-color: #fff;
+}
+.p_show h3 {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 0.4rem;
+  padding: 0.4rem 0;
+}
+.p_show .info {
+  text-align: center;
+  color: #999;
+  font-size: 0.24rem;
+  margin-bottom: 0.4rem;
+}
+.p_show .content {
+  font-size: 0.28rem;
+  text-indent: 2em;
+}
+.p_show .sm img {
+  width: 2.4rem;
+  height: 2.4rem;
+  float: right;
+}
+.p_show .bg img {
+  width: 5.2rem;
+  margin: 0 auto;
+}
+.p_city {
+  background-color: #fff;
+  padding: 0.6rem 1rem;
+}
+.p_city ul {
+  padding: 0.1rem;
+  box-shadow: 0.02rem 0.02rem 0.2rem #ccc;
+}
+.p_city ul:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+.p_city ul li {
+  float: left;
+  width: 25%;
+  height: 0.4rem;
+  text-align: center;
+  padding: 0 0.1rem;
+}
+.p_city ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 0.02rem dashed #ccc;
+  padding: 0 0.1rem;
+  font-size: 0.24rem;
+}
+.p_city ul li a span {
+  float: left;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+.p_city ul li a strong {
+  color: #f27b04;
+  float: right;
+}
+.p_buy {
+  height: 1rem;
+  background-color: #fff;
+  padding: 0 0.6rem;
+}
+.p_buy .buy_btn {
+  display: block;
+  width: 100%;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  border-radius: 0.1rem;
+  background-color: #ff841d;
+  text-align: center;
+  color: #fff;
+  font-size: 0.28rem;
+}
+.p_code {
+  background-color: #fff;
+  padding: 0 0.2rem;
+}
+.p_comment {
+  background-color: #fff;
+  padding: 0 0.4rem;
+}
+.p_comment h5 {
+  font-size: 0.32rem;
+  padding-left: 0.2rem;
+  padding: 0.6rem 0 0.3rem;
+  margin: 0 -0.2rem;
+}
+.p_comment .com_post .com_box {
+  border: 0.04rem solid #ECEAE8;
+}
+.p_comment .com_post .com_box textarea {
+  width: 100%;
+  height: 1.32rem;
+  line-height: 0.44rem;
+  font-size: 0.28rem;
+}
+.p_comment .com_post .com_box .bot {
+  height: 0.64rem;
+  background-color: #fbfbfb;
+  border-top: solid 0.02rem #f2f2f2;
+}
+.p_comment .com_post .com_box .bot .btn {
+  display: block;
+  height: 100%;
+  line-height: 0.64rem;
+  text-align: center;
+  width: 2rem;
+  background-color: #ff841d;
+  color: #fff;
+  cursor: pointer;
+}
+.p_comment .com_content {
+  padding-bottom: 0.4rem;
+}
+.p_comment .com_content img {
+  width: 0.8rem;
+  height: 0.8rem;
+  float: left;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+  margin-top: 0.2rem;
+}
+.p_comment .com_content .text {
+  overflow: hidden;
+  font-size: 0.24rem;
+}
+.p_comment .com_content .text span:first-child {
+  color: #5997c0;
+}
+.p_comment .com_content .text span:last-child {
+  color: #999;
+}
+.p_comment .com_content .text p {
+  height: 0.6rem;
+  line-height: 0.6rem;
+}
